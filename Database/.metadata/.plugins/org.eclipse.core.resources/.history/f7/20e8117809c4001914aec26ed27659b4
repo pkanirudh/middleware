@@ -1,0 +1,21 @@
+package com.example.demo.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.mongodb.core.MongoTemplate;
+
+import com.mongodb.MongoClient;
+
+
+
+@Configuration
+public class AppConfig {
+
+	public MongoClient client() {
+		
+		return new MongoClient("localhost");
+	}
+	
+	public MongoTemplate template() {
+		return new MongoTemplate(client(), "test");
+	}
+}

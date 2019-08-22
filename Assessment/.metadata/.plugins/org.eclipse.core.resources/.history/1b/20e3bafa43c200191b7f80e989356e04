@@ -1,0 +1,13 @@
+package com.example.demo.service;
+
+import java.time.LocalDate;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class DateService {
+
+	public int age(LocalDate today, LocalDate dateOfBirth) {
+		
+	}
+}

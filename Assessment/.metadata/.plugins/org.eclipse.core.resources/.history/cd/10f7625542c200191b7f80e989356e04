@@ -1,0 +1,20 @@
+package com.example.demo.controller;
+
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.model.DateOfBirth;
+
+@Controller
+public class DateController {
+
+	@Autowired
+	private Date dateOfBirth;
+	
+	@Autowired Date currentDate;
+	
+}

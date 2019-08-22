@@ -1,0 +1,13 @@
+package com.example.demo;
+
+import java.util.Date;
+
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+@NoArgsContructor
+public class DateOfBirth {
+
+	private Date dob;
+}

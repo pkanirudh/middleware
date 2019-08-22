@@ -1,0 +1,17 @@
+package com.example.demo;
+
+import org.springframework.amqp.core.Queue;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BasicRabbitMqApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BasicRabbitMqApplication.class, args);
+	}
+
+	public Queue queue() {
+		return new Queue("spice-jet-orders");
+	}
+}
